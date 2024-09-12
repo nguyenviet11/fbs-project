@@ -140,6 +140,7 @@
   padding: 15px 20px
 }
 .list {
+  width: 70%;
   font-size: 21px;
   font-weight: bold;
 }
@@ -475,18 +476,81 @@
   display: flex;
   align-items: center;
 }
-@media screen and (max-width: 1000px) {
+.text3{
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 19px;
+}
+.imagLogo{
+  width: 500px;
+  height: 350px
+}
+.margin{
+   width: 50%
+}
+@media screen and (max-width: 1100px) {
   .wrapperTable{
       width: 100%;
       overflow-x: auto;
   }
+  .containerLogo{
+    margin-top: 50px;
+    width: 700px;
+  }
+  .text3{
+    font-size: 15px;
+    line-height: 1.3;
+    margin-top: 19px;
+  }
+  .imagLogo{
+    width: 250px;
+    height: 150px;
+  }
+  .btn{
+    font-size: 11px;
+  }
+  .main{
+    width: 900px;
+  }
 }
 
 @media screen and (max-width: 800px) {
+  .list li a{
+    margin: 0px 3px;
+  }
+  .list{
+    width: 100%;
+  }
+  .list a{
+    font-size: 12px;
+  }
+  .container{
+    margin-top: 10px;
+  }
+  .image{
+    display: none;
+  }
   .containerWrapper {
       display: block;
   }
-
+  .containerLogo{
+    width: 500px;
+  }
+  .fontText{
+    font-size: 15px;
+    width: 81%;
+    margin-left: 2%;
+  }
+  .margin{
+    width: 80%;
+    margin-left: 2%;
+  }
+  .none{
+    display: none;
+  }
+  .imagLogo{
+    display: none;
+  }
   .containerInfoHeader {
       margin-left: 3%;
       width: 41%;
@@ -648,5 +712,10 @@
   .wrapperTable{
       width: 100%;
       overflow-x: auto;
+  }
+  .main {
+    padding-bottom: 30px;
+    padding: 0px 20px;
+    width: 400px !important;
   }
 }

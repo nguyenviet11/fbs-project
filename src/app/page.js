@@ -21,7 +21,7 @@ export default function Home() {
         <nav className={style.navbar}>
         </nav>
         <div className={style.container}>
-          <ul style={{ textAlign: 'center', width: '70%', margin: 'auto' }} className={style.list}>
+          <ul style={{ textAlign: 'center', margin: 'auto' }} className={style.list}>
             <a href={URL_FBS}>
               <Image
                 src={logo}
@@ -41,12 +41,13 @@ export default function Home() {
         <div className={style.containerLogo}>
           <h3 className={style.fontText}>We evaluate the brokers based on the experience, experience and expertise of traders who have many years of experience in the market, we provide an in-depth assessment and filter out the Forex Brokers that are most trusted and used by customers in Vietnam and in the world</h3>
           <div style={{ display: 'flex', marginTop: 40 }}>
-            <div style={{ width: '50%' }}><Image src={logo} alt="Logo fbs"
-              width={500}
-              height={350} /></div>
-            <div style={{ width: '50%' }}>
+            <div style={{ width: '50%' }} className={style.none}>
+              <Image src={logo} alt="Logo fbs"
+              className={style.imagLogo}
+              /></div>
+            <div className={style.margin}>
               <h4 style={{ fontSize: 60, fontWeight: 400 }}>FBS.COM</h4>
-              <p style={{ fontSize: 18, lineHeight: 1.6, marginTop: 19 }}>FBS, or FBS Market Inc, is a brokerage company founded in 2009, headquartered in Russia. With the goal of expanding and investing heavily in marketing, FBS has become an official partner of FC Barcelona since January 1, 2020. With more than 10 years of operation, FBS has made a deep impression on the Asian financial markets, with a series of impressive achievements including expanding its operations to more than 190 countries, attracting more than 16 million traders and more than 410,000 trusted partners. The success of FBS is also evidenced by the annual profit of its clients reaching an impressive figure of 500 million US dollars. From each country in which they operate, FBS has developed a separate website, with a total of 19 websites around the world.</p>
+              <p className={style.text3}>FBS, or FBS Market Inc, is a brokerage company founded in 2009, headquartered in Russia. With the goal of expanding and investing heavily in marketing, FBS has become an official partner of FC Barcelona since January 1, 2020. With more than 10 years of operation, FBS has made a deep impression on the Asian financial markets, with a series of impressive achievements including expanding its operations to more than 190 countries, attracting more than 16 million traders and more than 410,000 trusted partners. The success of FBS is also evidenced by the annual profit of its clients reaching an impressive figure of 500 million US dollars. From each country in which they operate, FBS has developed a separate website, with a total of 19 websites around the world.</p>
               <div style={{ display: 'flex' }}>
                 <div style={{ marginTop: 20 }}>
                   <a href={URL_FBS} className={style.btn}>Visit website</a>
